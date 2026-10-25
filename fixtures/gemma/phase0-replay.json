@@ -1,0 +1,19 @@
+{
+  "records": [
+    {
+      "inputHash": "3c354ecfdf9b0a2ddbfac4995ddd5e622e6e8f215b8d68e0ca3a1b815c810101",
+      "chunks": [
+        { "text": "{\"phase\":0," },
+        { "text": "\"fixtureReplay\":true}" }
+      ],
+      "metadata": {
+        "recordedFor": "phase0-offline-gate",
+        "pass": "B",
+        "model": "small",
+        "promptVersion": "phase0-fixture-v1",
+        "provider": "fixture"
+      }
+    }
+  ]
+}
+

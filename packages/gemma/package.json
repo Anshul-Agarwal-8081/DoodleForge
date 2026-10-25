@@ -1,0 +1,13 @@
+{
+  "name": "@doodleforge/gemma",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "exports": {
+    ".": "./src/index.ts"
+  },
+  "dependencies": {
+    "@doodleforge/ir": "workspace:*",
+    "@google/genai": "^2.31.0"
+  }
+}

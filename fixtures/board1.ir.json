@@ -1,0 +1,68 @@
+{
+  "diagram_id": "doodleforge-board-1",
+  "version": 0,
+  "domain": "userstory",
+  "source": { "image_id": "board1", "width": 1000, "height": 720 },
+  "nodes": [
+    {
+      "id": "epic-members",
+      "type": "epic",
+      "label": "Member experience",
+      "props": {},
+      "region": { "marker": 1, "box": [42, 52, 142, 946] },
+      "confidence": 0.97,
+      "origin": "user",
+      "via": "sketch"
+    },
+    {
+      "id": "story-signin",
+      "type": "story",
+      "label": "Sign in with email",
+      "props": { "story": "As a member, I want to sign in with email" },
+      "group": "group-members",
+      "region": { "marker": 2, "box": [205, 125, 610, 455] },
+      "confidence": 0.95,
+      "origin": "user",
+      "via": "sketch"
+    },
+    {
+      "id": "story-profile",
+      "type": "story",
+      "label": "View my profile",
+      "props": {
+        "persona": "member",
+        "story": "As a member, I want to view my profile so that I can check my details",
+        "acceptance": [
+          { "given": "I am signed in", "when": "I open my profile", "then": "my saved details are shown" }
+        ]
+      },
+      "group": "group-members",
+      "region": { "marker": 3, "box": [205, 545, 610, 876] },
+      "confidence": 0.94,
+      "origin": "user",
+      "via": "sketch"
+    }
+  ],
+  "edges": [
+    {
+      "id": "edge-signin-profile",
+      "from": { "node": "story-signin" },
+      "to": { "node": "story-profile" },
+      "relation": "depends_on",
+      "label": "then",
+      "region": { "box": [365, 455, 450, 545] },
+      "confidence": 0.83,
+      "origin": "user",
+      "via": "sketch"
+    }
+  ],
+  "groups": [
+    { "id": "group-members", "label": "Member experience", "members": ["story-signin", "story-profile"] }
+  ],
+  "assumptions": [],
+  "questions": [],
+  "diagnostics": [],
+  "constraints": {},
+  "style": { "fixture": true }
+}
+

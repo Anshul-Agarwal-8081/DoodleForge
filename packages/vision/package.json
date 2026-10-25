@@ -1,0 +1,12 @@
+{
+  "name": "@doodleforge/vision",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "exports": { ".": "./src/index.ts", "./worker": "./src/vision.worker.ts" },
+  "dependencies": {
+    "@doodleforge/ir": "workspace:*",
+    "@techstark/opencv-js": "5.0.0-release.1",
+    "heic2any": "^0.0.4"
+  }
+}

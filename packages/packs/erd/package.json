@@ -1,0 +1,13 @@
+{
+  "name": "@doodleforge/pack-erd",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "exports": { ".": "./src/index.ts", "./emitter": "./src/emitter.ts", "./verify": "./src/verify.ts" },
+  "dependencies": {
+    "@doodleforge/ir": "workspace:*",
+    "@doodleforge/rules": "workspace:*",
+    "@electric-sql/pglite": "^0.5.11",
+    "zod": "^4.1.12"
+  }
+}

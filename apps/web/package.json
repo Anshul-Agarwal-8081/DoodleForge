@@ -1,0 +1,29 @@
+{
+  "name": "@doodleforge/web",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host 127.0.0.1",
+    "build": "vite build",
+    "preview": "vite preview --host 127.0.0.1"
+  },
+  "dependencies": {
+    "@doodleforge/ir": "workspace:*",
+    "@doodleforge/layout": "workspace:*",
+    "@doodleforge/pack-erd": "workspace:*",
+    "@doodleforge/pack-cloud": "workspace:*",
+    "@doodleforge/pack-labs": "workspace:*",
+    "@doodleforge/pack-software": "workspace:*",
+    "@doodleforge/pack-userstory": "workspace:*",
+    "@doodleforge/rules": "workspace:*",
+    "@doodleforge/text": "workspace:*",
+    "@doodleforge/vision": "workspace:*",
+    "@xyflow/react": "^12.12.0",
+    "immer": "^11.2.9",
+    "react": "^19.3.1",
+    "react-dom": "^19.3.1",
+    "zustand": "^5.0.16"
+  }
+}
+

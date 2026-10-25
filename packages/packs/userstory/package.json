@@ -1,0 +1,12 @@
+{
+  "name": "@doodleforge/pack-userstory",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "exports": { ".": "./src/index.ts", "./schema": "./src/schema.ts" },
+  "dependencies": {
+    "@doodleforge/ir": "workspace:*",
+    "@doodleforge/rules": "workspace:*",
+    "zod": "^4.1.12"
+  }
+}

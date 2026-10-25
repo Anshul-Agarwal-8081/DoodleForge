@@ -1,0 +1,17 @@
+{
+  "status": "placeholder",
+  "note": "Replace these ten placeholders with consented sketch image paths, transcriptions, and reviewed expected structures before a live quality run.",
+  "cases": [
+    { "id": "board-01", "description": "Sticky-note backlog with epics and dependencies", "imagePath": null, "transcription": null, "expectedStructure": null },
+    { "id": "board-02", "description": "Sticky-note backlog with a vague story", "imagePath": null, "transcription": null, "expectedStructure": null },
+    { "id": "board-03", "description": "Sticky-note backlog with a priority marker", "imagePath": null, "transcription": null, "expectedStructure": null },
+    { "id": "board-04", "description": "Sticky-note backlog with a dependency arrow", "imagePath": null, "transcription": null, "expectedStructure": null },
+    { "id": "board-05", "description": "Sticky-note backlog with an unreadable note", "imagePath": null, "transcription": null, "expectedStructure": null },
+    { "id": "board-06", "description": "Sticky-note backlog with two epics", "imagePath": null, "transcription": null, "expectedStructure": null },
+    { "id": "board-07", "description": "Sticky-note backlog with duplicate-looking notes", "imagePath": null, "transcription": null, "expectedStructure": null },
+    { "id": "board-08", "description": "Sticky-note backlog with color-coded note kinds", "imagePath": null, "transcription": null, "expectedStructure": null },
+    { "id": "board-09", "description": "Sticky-note backlog with a 2x2 priority quadrant", "imagePath": null, "transcription": null, "expectedStructure": null },
+    { "id": "board-10", "description": "Sticky-note backlog photographed at an angle", "imagePath": null, "transcription": null, "expectedStructure": null }
+  ]
+}
+

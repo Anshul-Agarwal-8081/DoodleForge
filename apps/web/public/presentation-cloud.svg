@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 720">
+<rect width="1000" height="720" fill="#fdfbf7"/>
+<defs><pattern id="dots" width="18" height="18" patternUnits="userSpaceOnUse"><circle cx="2" cy="2" r="1" fill="#cbd5e1"/></pattern></defs><rect width="1000" height="720" fill="url(#dots)"/>
+<g stroke="#1e293b" stroke-width="8" stroke-linejoin="round" fill="none" stroke-dasharray="13 11"><path d="M490 225L330 290M510 225L675 290M330 520L490 570"/></g>
+<g font-family="Comic Sans MS, Chalkboard SE, cursive" fill="#1e293b" stroke="#1e293b" stroke-width="7" stroke-linejoin="round">
+<rect x="390" y="55" width="205" height="190" rx="27" fill="#bfdbfe"/><rect x="175" y="285" width="310" height="240" rx="27" fill="#fde68a"/><rect x="515" y="285" width="320" height="240" rx="27" fill="#fde68a"/><rect x="390" y="570" width="205" height="150" rx="25" fill="#86efac"/>
+</g>
+<g font-family="Comic Sans MS, Chalkboard SE, cursive" fill="#1e293b" text-anchor="middle">
+<text x="492" y="105" font-size="22">CLIENT</text><text x="492" y="160" font-size="36" font-weight="bold">Web App</text><text x="492" y="205" font-size="22">React SPA</text>
+<text x="330" y="340" font-size="20">APP SERVER</text><text x="330" y="395" font-size="32" font-weight="bold">Node.js API 1</text><text x="330" y="450" font-size="22">Express</text>
+<text x="675" y="340" font-size="20">APP SERVER</text><text x="675" y="395" font-size="32" font-weight="bold">Node.js API 2</text><text x="675" y="450" font-size="22">Express</text>
+<text x="492" y="620" font-size="20">DATABASE</text><text x="492" y="670" font-size="31" font-weight="bold">PostgreSQL</text>
+</g></svg>

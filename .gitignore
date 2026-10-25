@@ -1,0 +1,14 @@
+node_modules/
+.DS_Store
+.pnpm-store/
+.doodleforge/
+dist/
+coverage/
+.vitest/
+test-results/
+playwright-report/
+*.log
+.env
+.env.*
+!.env.example
+

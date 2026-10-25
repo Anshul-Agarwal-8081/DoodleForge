@@ -1,0 +1,14 @@
+{
+  "runMode": "fixture",
+  "fixtureReplay": {
+    "phase": 0,
+    "fixtureReplay": true
+  },
+  "candidateSketches": 10,
+  "measuredRealModelCalls": 0,
+  "boxFormatAndScale": "UNVERIFIED: no real sketches or model endpoint were available",
+  "validJsonRate": "UNVERIFIED: fixture replay is not model quality evidence; live script is configured for 50 calls per pass and constraint condition",
+  "structurePassTemperatureComparison": "UNVERIFIED: requires reviewed sketch transcriptions and expected structures",
+  "modelCardSpecs": "UNVERIFIED: no Gemma model or hardware was reachable/configured",
+  "runNote": "The offline fixture path executed. The ten case entries are placeholders and are not evaluation inputs."
+}

@@ -1,0 +1,394 @@
+{
+  "records": [
+    {
+      "inputHash": "b9e4ce06c6c864074532db243f27b3348b2c6938c65a60f1f7e80a1ca5205cf7",
+      "chunks": [
+        {
+          "text": "{\"domain\":\"userstory\",\"confidence\":0.96,\"alternatives\":[]}"
+        }
+      ],
+      "metadata": {
+        "fixture": "member-board",
+        "pass": "0",
+        "promptVersion": "phase2-classify-v1"
+      }
+    },
+    {
+      "inputHash": "2c80ab3b286ad445404f121c155d5c0541c086d656a557e9ba4f2a151edeb01d",
+      "chunks": [
+        {
+          "text": "{\"tags\":[{\"tagId\":1,\"kind\":\"header\",\"text\":\"Member experience\",\"shape\":\"rectangle\",\"box\":[35,45,175,955],\"confidence\":0.9},{\"tagId\":2,\"kind\":\"note\",\"text\":\"Sign in with email\",\"shape\":\"sticky_note\",\"box\":[205,125,610,455],\"confidence\":0.84},{\"tagId\":3,\"kind\":\"note\",\"text\":\"View my profile\",\"shape\":\"sticky_note\",\"box\":[205,545,610,876],\"confidence\":0.82},{\"tagId\":4,\"kind\":\"arrow\",\"text\":\"then\",\"shape\":\"arrow\",\"box\":[375,455,445,545],\"confidence\":0.7}],\"arrows\":[{\"tagId\":4,\"tailTag\":2,\"headTag\":3}]}"
+        }
+      ],
+      "metadata": {
+        "fixture": "member-board",
+        "pass": "A",
+        "promptVersion": "phase2-transcribe-v1"
+      }
+    },
+    {
+      "inputHash": "292810cbcc5ae6002bd384ad1a232bb0f8961a37fe24493dd0141605575e6ea7",
+      "chunks": [
+        {
+          "text": "{\"patches\":[{\"id\":\"fixture-memberboard-structure-1\",\"base_version\":1,\"origin\":\"gemma\",\"via\":\"sketch\",\"reason\":\"Structure Member experience from the transcribed sketch\",\"ops\":[{\"type\":\"add_node\",\"node\":{\"id\":\"epic-memberboard\",\"type\":\"epic\",\"label\":\"Member experience\",\"props\":{},\"region\":{\"marker\":1,\"box\":[35,45,175,955]},\"confidence\":0.88,\"origin\":\"gemma\",\"via\":\"sketch\"}},{\"type\":\"group\",\"group\":{\"id\":\"group-memberboard\",\"label\":\"Member experience\",\"members\":[]}}]},{\"id\":\"fixture-memberboard-structure-2\",\"base_version\":2,\"origin\":\"gemma\",\"via\":\"sketch\",\"reason\":\"Structure Member experience from the transcribed sketch\",\"ops\":[{\"type\":\"add_node\",\"node\":{\"id\":\"story-memberboard-1\",\"type\":\"story\",\"label\":\"Sign in with email\",\"props\":{\"story\":\"As a team member, I want to sign in with email\"},\"group\":\"group-memberboard\",\"region\":{\"marker\":2,\"box\":[205,125,610,455]},\"confidence\":0.83,\"origin\":\"gemma\",\"via\":\"sketch\"}},{\"type\":\"group\",\"group\":{\"id\":\"group-memberboard\",\"label\":\"Member experience\",\"members\":[\"story-memberboard-1\"]}},{\"type\":\"add_assumption\",\"assumption\":{\"id\":\"assumption-memberboard-story-title\",\"text\":\"The two notes are grouped under “Member experience”.\",\"status\":\"open\",\"patchId\":\"fixture-memberboard-structure-2\"}}]},{\"id\":\"fixture-memberboard-structure-3\",\"base_version\":3,\"origin\":\"gemma\",\"via\":\"sketch\",\"reason\":\"Structure Member experience from the transcribed sketch\",\"ops\":[{\"type\":\"add_node\",\"node\":{\"id\":\"story-memberboard-2\",\"type\":\"story\",\"label\":\"View my profile\",\"props\":{\"story\":\"As a team member, I want to view my profile\",\"persona\":\"A team member\",\"acceptance\":[{\"given\":\"I am signed in\",\"when\":\"I view my profile\",\"then\":\"I see the expected result\"}]},\"group\":\"group-memberboard\",\"region\":{\"marker\":3,\"box\":[205,545,610,876]},\"confidence\":0.8,\"origin\":\"gemma\",\"via\":\"sketch\"}},{\"type\":\"group\",\"group\":{\"id\":\"group-memberboard\",\"label\":\"Member experience\",\"members\":[\"story-memberboard-1\",\"story-memberboard-2\"]}},{\"type\":\"add_edge\",\"edge\":{\"id\":\"edge-memberboard-1\",\"from\":{\"node\":\"story-memberboard-1\"},\"to\":{\"node\":\"story-memberboard-2\"},\"relation\":\"depends_on\",\"label\":\"then\",\"region\":{\"box\":[375,455,445,545]},\"confidence\":0.7,\"origin\":\"gemma\",\"via\":\"sketch\"}}]}],\"assumptions\":[{\"id\":\"assumption-memberboard-story-title\",\"text\":\"The two notes are grouped under “Member experience”.\",\"status\":\"open\",\"patchId\":\"fixture-memberboard-structure-2\"}],\"questions\":[]}"
+        }
+      ],
+      "metadata": {
+        "fixture": "member-board",
+        "pass": "B",
+        "promptVersion": "phase2-structure-v2"
+      }
+    },
+    {
+      "inputHash": "4286010cd9ae9f8f88bf6798c9a77a96cf78ee9bd86c038ce5e50c645551867a",
+      "chunks": [
+        {
+          "text": "{\"domain\":\"userstory\",\"confidence\":0.96,\"alternatives\":[]}"
+        }
+      ],
+      "metadata": {
+        "fixture": "release-board",
+        "pass": "0",
+        "promptVersion": "phase2-classify-v1"
+      }
+    },
+    {
+      "inputHash": "558f03d6490213ad68f4bb52c15dd041868ea4948abbd4cf3456aee5629e1868",
+      "chunks": [
+        {
+          "text": "{\"tags\":[{\"tagId\":1,\"kind\":\"header\",\"text\":\"April launch\",\"shape\":\"rectangle\",\"box\":[35,45,175,955],\"confidence\":0.9},{\"tagId\":2,\"kind\":\"note\",\"text\":\"Invite teammates\",\"shape\":\"sticky_note\",\"box\":[205,125,610,455],\"confidence\":0.84},{\"tagId\":3,\"kind\":\"note\",\"text\":\"Export the report\",\"shape\":\"sticky_note\",\"box\":[205,545,610,876],\"confidence\":0.82},{\"tagId\":4,\"kind\":\"arrow\",\"text\":\"after\",\"shape\":\"arrow\",\"box\":[375,455,445,545],\"confidence\":0.7}],\"arrows\":[{\"tagId\":4,\"tailTag\":2,\"headTag\":3}]}"
+        }
+      ],
+      "metadata": {
+        "fixture": "release-board",
+        "pass": "A",
+        "promptVersion": "phase2-transcribe-v1"
+      }
+    },
+    {
+      "inputHash": "3437f00971de30c1b577503bea61e8b6b819c0c67b2bbeb0d6aad7ab3ac2378c",
+      "chunks": [
+        {
+          "text": "{\"patches\":[{\"id\":\"fixture-releaseboard-structure-1\",\"base_version\":1,\"origin\":\"gemma\",\"via\":\"sketch\",\"reason\":\"Structure April release from the transcribed sketch\",\"ops\":[{\"type\":\"add_node\",\"node\":{\"id\":\"epic-releaseboard\",\"type\":\"epic\",\"label\":\"April launch\",\"props\":{},\"region\":{\"marker\":1,\"box\":[35,45,175,955]},\"confidence\":0.88,\"origin\":\"gemma\",\"via\":\"sketch\"}},{\"type\":\"group\",\"group\":{\"id\":\"group-releaseboard\",\"label\":\"April launch\",\"members\":[]}}]},{\"id\":\"fixture-releaseboard-structure-2\",\"base_version\":2,\"origin\":\"gemma\",\"via\":\"sketch\",\"reason\":\"Structure April release from the transcribed sketch\",\"ops\":[{\"type\":\"add_node\",\"node\":{\"id\":\"story-releaseboard-1\",\"type\":\"story\",\"label\":\"Invite teammates\",\"props\":{\"story\":\"As a team member, I want to invite teammates\"},\"group\":\"group-releaseboard\",\"region\":{\"marker\":2,\"box\":[205,125,610,455]},\"confidence\":0.83,\"origin\":\"gemma\",\"via\":\"sketch\"}},{\"type\":\"group\",\"group\":{\"id\":\"group-releaseboard\",\"label\":\"April launch\",\"members\":[\"story-releaseboard-1\"]}},{\"type\":\"add_assumption\",\"assumption\":{\"id\":\"assumption-releaseboard-story-title\",\"text\":\"The two notes are grouped under “April launch”.\",\"status\":\"open\",\"patchId\":\"fixture-releaseboard-structure-2\"}}]},{\"id\":\"fixture-releaseboard-structure-3\",\"base_version\":3,\"origin\":\"gemma\",\"via\":\"sketch\",\"reason\":\"Structure April release from the transcribed sketch\",\"ops\":[{\"type\":\"add_node\",\"node\":{\"id\":\"story-releaseboard-2\",\"type\":\"story\",\"label\":\"Export the report\",\"props\":{\"story\":\"As a team member, I want to export the report\",\"persona\":\"A team member\",\"acceptance\":[{\"given\":\"I am signed in\",\"when\":\"I export the report\",\"then\":\"I see the expected result\"}]},\"group\":\"group-releaseboard\",\"region\":{\"marker\":3,\"box\":[205,545,610,876]},\"confidence\":0.8,\"origin\":\"gemma\",\"via\":\"sketch\"}},{\"type\":\"group\",\"group\":{\"id\":\"group-releaseboard\",\"label\":\"April launch\",\"members\":[\"story-releaseboard-1\",\"story-releaseboard-2\"]}},{\"type\":\"add_edge\",\"edge\":{\"id\":\"edge-releaseboard-1\",\"from\":{\"node\":\"story-releaseboard-1\"},\"to\":{\"node\":\"story-releaseboard-2\"},\"relation\":\"depends_on\",\"label\":\"after\",\"region\":{\"box\":[375,455,445,545]},\"confidence\":0.7,\"origin\":\"gemma\",\"via\":\"sketch\"}}]}],\"assumptions\":[{\"id\":\"assumption-releaseboard-story-title\",\"text\":\"The two notes are grouped under “April launch”.\",\"status\":\"open\",\"patchId\":\"fixture-releaseboard-structure-2\"}],\"questions\":[]}"
+        }
+      ],
+      "metadata": {
+        "fixture": "release-board",
+        "pass": "B",
+        "promptVersion": "phase2-structure-v2"
+      }
+    },
+    {
+      "inputHash": "385a8aabf631d4ec4a5ac1b8bc0258dd9271c1a61bf3b60d899fdffd526c191a",
+      "chunks": [
+        {
+          "text": "{\"domain\":\"userstory\",\"confidence\":0.96,\"alternatives\":[]}"
+        }
+      ],
+      "metadata": {
+        "fixture": "support-board",
+        "pass": "0",
+        "promptVersion": "phase2-classify-v1"
+      }
+    },
+    {
+      "inputHash": "e77ffc3488c3b023a40d3e85450d44785c41f6da8b5ad434dbe7d2af5528b35f",
+      "chunks": [
+        {
+          "text": "{\"tags\":[{\"tagId\":1,\"kind\":\"header\",\"text\":\"Customer support\",\"shape\":\"rectangle\",\"box\":[35,45,175,955],\"confidence\":0.9},{\"tagId\":2,\"kind\":\"note\",\"text\":\"Triage a request\",\"shape\":\"sticky_note\",\"box\":[205,125,610,455],\"confidence\":0.84},{\"tagId\":3,\"kind\":\"note\",\"text\":\"Notify the customer\",\"shape\":\"sticky_note\",\"box\":[205,545,610,876],\"confidence\":0.82},{\"tagId\":4,\"kind\":\"arrow\",\"text\":\"when resolved\",\"shape\":\"arrow\",\"box\":[375,455,445,545],\"confidence\":0.7}],\"arrows\":[{\"tagId\":4,\"tailTag\":2,\"headTag\":3}]}"
+        }
+      ],
+      "metadata": {
+        "fixture": "support-board",
+        "pass": "A",
+        "promptVersion": "phase2-transcribe-v1"
+      }
+    },
+    {
+      "inputHash": "65b622f7ec3c12b9aa3008d4cec40f0f3e4fb9b7b5bb7f66525859c2b8ae9f99",
+      "chunks": [
+        {
+          "text": "{\"patches\":[{\"id\":\"fixture-supportboard-structure-1\",\"base_version\":1,\"origin\":\"gemma\",\"via\":\"sketch\",\"reason\":\"Structure Support flow from the transcribed sketch\",\"ops\":[{\"type\":\"add_node\",\"node\":{\"id\":\"epic-supportboard\",\"type\":\"epic\",\"label\":\"Customer support\",\"props\":{},\"region\":{\"marker\":1,\"box\":[35,45,175,955]},\"confidence\":0.88,\"origin\":\"gemma\",\"via\":\"sketch\"}},{\"type\":\"group\",\"group\":{\"id\":\"group-supportboard\",\"label\":\"Customer support\",\"members\":[]}}]},{\"id\":\"fixture-supportboard-structure-2\",\"base_version\":2,\"origin\":\"gemma\",\"via\":\"sketch\",\"reason\":\"Structure Support flow from the transcribed sketch\",\"ops\":[{\"type\":\"add_node\",\"node\":{\"id\":\"story-supportboard-1\",\"type\":\"story\",\"label\":\"Triage a request\",\"props\":{\"story\":\"As a team member, I want to triage a request\"},\"group\":\"group-supportboard\",\"region\":{\"marker\":2,\"box\":[205,125,610,455]},\"confidence\":0.83,\"origin\":\"gemma\",\"via\":\"sketch\"}},{\"type\":\"group\",\"group\":{\"id\":\"group-supportboard\",\"label\":\"Customer support\",\"members\":[\"story-supportboard-1\"]}},{\"type\":\"add_assumption\",\"assumption\":{\"id\":\"assumption-supportboard-story-title\",\"text\":\"The two notes are grouped under “Customer support”.\",\"status\":\"open\",\"patchId\":\"fixture-supportboard-structure-2\"}}]},{\"id\":\"fixture-supportboard-structure-3\",\"base_version\":3,\"origin\":\"gemma\",\"via\":\"sketch\",\"reason\":\"Structure Support flow from the transcribed sketch\",\"ops\":[{\"type\":\"add_node\",\"node\":{\"id\":\"story-supportboard-2\",\"type\":\"story\",\"label\":\"Notify the customer\",\"props\":{\"story\":\"As a team member, I want to notify the customer\",\"persona\":\"A team member\",\"acceptance\":[{\"given\":\"I am signed in\",\"when\":\"I notify the customer\",\"then\":\"I see the expected result\"}]},\"group\":\"group-supportboard\",\"region\":{\"marker\":3,\"box\":[205,545,610,876]},\"confidence\":0.8,\"origin\":\"gemma\",\"via\":\"sketch\"}},{\"type\":\"group\",\"group\":{\"id\":\"group-supportboard\",\"label\":\"Customer support\",\"members\":[\"story-supportboard-1\",\"story-supportboard-2\"]}},{\"type\":\"add_edge\",\"edge\":{\"id\":\"edge-supportboard-1\",\"from\":{\"node\":\"story-supportboard-1\"},\"to\":{\"node\":\"story-supportboard-2\"},\"relation\":\"depends_on\",\"label\":\"when resolved\",\"region\":{\"box\":[375,455,445,545]},\"confidence\":0.7,\"origin\":\"gemma\",\"via\":\"sketch\"}}]}],\"assumptions\":[{\"id\":\"assumption-supportboard-story-title\",\"text\":\"The two notes are grouped under “Customer support”.\",\"status\":\"open\",\"patchId\":\"fixture-supportboard-structure-2\"}],\"questions\":[]}"
+        }
+      ],
+      "metadata": {
+        "fixture": "support-board",
+        "pass": "B",
+        "promptVersion": "phase2-structure-v2"
+      }
+    },
+    {
+      "inputHash": "ee8cd667b81f2747693306eab57d2be9e4bdc8e8f5bdb950c0b803eee04a4602",
+      "chunks": [
+        {
+          "text": "{\"domain\":\"userstory\",\"confidence\":0.96,\"alternatives\":[]}"
+        }
+      ],
+      "metadata": {
+        "fixture": "onboarding-board",
+        "pass": "0",
+        "promptVersion": "phase2-classify-v1"
+      }
+    },
+    {
+      "inputHash": "2d4cf1a12dc69ab78405e9e73824b90e4cbc3e2f374a29c820cebc8508855243",
+      "chunks": [
+        {
+          "text": "{\"tags\":[{\"tagId\":1,\"kind\":\"header\",\"text\":\"Member onboarding\",\"shape\":\"rectangle\",\"box\":[35,45,175,955],\"confidence\":0.9},{\"tagId\":2,\"kind\":\"note\",\"text\":\"Create an account\",\"shape\":\"sticky_note\",\"box\":[205,125,610,455],\"confidence\":0.84},{\"tagId\":3,\"kind\":\"note\",\"text\":\"Verify the email\",\"shape\":\"sticky_note\",\"box\":[205,545,610,876],\"confidence\":0.82},{\"tagId\":4,\"kind\":\"arrow\",\"text\":\"then\",\"shape\":\"arrow\",\"box\":[375,455,445,545],\"confidence\":0.7}],\"arrows\":[{\"tagId\":4,\"tailTag\":2,\"headTag\":3}]}"
+        }
+      ],
+      "metadata": {
+        "fixture": "onboarding-board",
+        "pass": "A",
+        "promptVersion": "phase2-transcribe-v1"
+      }
+    },
+    {
+      "inputHash": "a4f03afb287b3de16cccc219abc0ad704ebfc47bf576b2eb5bb0c97c4fd8b900",
+      "chunks": [
+        {
+          "text": "{\"patches\":[{\"id\":\"fixture-onboardingboard-structure-1\",\"base_version\":1,\"origin\":\"gemma\",\"via\":\"sketch\",\"reason\":\"Structure New member onboarding from the transcribed sketch\",\"ops\":[{\"type\":\"add_node\",\"node\":{\"id\":\"epic-onboardingboard\",\"type\":\"epic\",\"label\":\"Member onboarding\",\"props\":{},\"region\":{\"marker\":1,\"box\":[35,45,175,955]},\"confidence\":0.88,\"origin\":\"gemma\",\"via\":\"sketch\"}},{\"type\":\"group\",\"group\":{\"id\":\"group-onboardingboard\",\"label\":\"Member onboarding\",\"members\":[]}}]},{\"id\":\"fixture-onboardingboard-structure-2\",\"base_version\":2,\"origin\":\"gemma\",\"via\":\"sketch\",\"reason\":\"Structure New member onboarding from the transcribed sketch\",\"ops\":[{\"type\":\"add_node\",\"node\":{\"id\":\"story-onboardingboard-1\",\"type\":\"story\",\"label\":\"Create an account\",\"props\":{\"story\":\"As a team member, I want to create an account\"},\"group\":\"group-onboardingboard\",\"region\":{\"marker\":2,\"box\":[205,125,610,455]},\"confidence\":0.83,\"origin\":\"gemma\",\"via\":\"sketch\"}},{\"type\":\"group\",\"group\":{\"id\":\"group-onboardingboard\",\"label\":\"Member onboarding\",\"members\":[\"story-onboardingboard-1\"]}},{\"type\":\"add_assumption\",\"assumption\":{\"id\":\"assumption-onboardingboard-story-title\",\"text\":\"The two notes are grouped under “Member onboarding”.\",\"status\":\"open\",\"patchId\":\"fixture-onboardingboard-structure-2\"}}]},{\"id\":\"fixture-onboardingboard-structure-3\",\"base_version\":3,\"origin\":\"gemma\",\"via\":\"sketch\",\"reason\":\"Structure New member onboarding from the transcribed sketch\",\"ops\":[{\"type\":\"add_node\",\"node\":{\"id\":\"story-onboardingboard-2\",\"type\":\"story\",\"label\":\"Verify the email\",\"props\":{\"story\":\"As a team member, I want to verify the email\",\"persona\":\"A team member\",\"acceptance\":[{\"given\":\"I am signed in\",\"when\":\"I verify the email\",\"then\":\"I see the expected result\"}]},\"group\":\"group-onboardingboard\",\"region\":{\"marker\":3,\"box\":[205,545,610,876]},\"confidence\":0.8,\"origin\":\"gemma\",\"via\":\"sketch\"}},{\"type\":\"group\",\"group\":{\"id\":\"group-onboardingboard\",\"label\":\"Member onboarding\",\"members\":[\"story-onboardingboard-1\",\"story-onboardingboard-2\"]}},{\"type\":\"add_edge\",\"edge\":{\"id\":\"edge-onboardingboard-1\",\"from\":{\"node\":\"story-onboardingboard-1\"},\"to\":{\"node\":\"story-onboardingboard-2\"},\"relation\":\"depends_on\",\"label\":\"then\",\"region\":{\"box\":[375,455,445,545]},\"confidence\":0.7,\"origin\":\"gemma\",\"via\":\"sketch\"}}]}],\"assumptions\":[{\"id\":\"assumption-onboardingboard-story-title\",\"text\":\"The two notes are grouped under “Member onboarding”.\",\"status\":\"open\",\"patchId\":\"fixture-onboardingboard-structure-2\"}],\"questions\":[]}"
+        }
+      ],
+      "metadata": {
+        "fixture": "onboarding-board",
+        "pass": "B",
+        "promptVersion": "phase2-structure-v2"
+      }
+    },
+    {
+      "inputHash": "f81138299c8f0950b3e78d60eb188c62bc1a312d4ee72253b992d4cd9b129cf9",
+      "chunks": [
+        {
+          "text": "{\"domain\":\"userstory\",\"confidence\":0.96,\"alternatives\":[]}"
+        }
+      ],
+      "metadata": {
+        "fixture": "checkout-board",
+        "pass": "0",
+        "promptVersion": "phase2-classify-v1"
+      }
+    },
+    {
+      "inputHash": "6a7e64d6eb1c5030b85c5605b9febb676a465bd05bd805da5532373d9dbabf10",
+      "chunks": [
+        {
+          "text": "{\"tags\":[{\"tagId\":1,\"kind\":\"header\",\"text\":\"Checkout\",\"shape\":\"rectangle\",\"box\":[35,45,175,955],\"confidence\":0.9},{\"tagId\":2,\"kind\":\"note\",\"text\":\"Add an item to the cart\",\"shape\":\"sticky_note\",\"box\":[205,125,610,455],\"confidence\":0.84},{\"tagId\":3,\"kind\":\"note\",\"text\":\"Complete the purchase\",\"shape\":\"sticky_note\",\"box\":[205,545,610,876],\"confidence\":0.82},{\"tagId\":4,\"kind\":\"arrow\",\"text\":\"after\",\"shape\":\"arrow\",\"box\":[375,455,445,545],\"confidence\":0.7}],\"arrows\":[{\"tagId\":4,\"tailTag\":2,\"headTag\":3}]}"
+        }
+      ],
+      "metadata": {
+        "fixture": "checkout-board",
+        "pass": "A",
+        "promptVersion": "phase2-transcribe-v1"
+      }
+    },
+    {
+      "inputHash": "5bcaa4d1885b879c462a8714ee053c099dafa54d922f0ae34941f51b3aca9156",
+      "chunks": [
+        {
+          "text": "{\"patches\":[{\"id\":\"fixture-checkoutboard-structure-1\",\"base_version\":1,\"origin\":\"gemma\",\"via\":\"sketch\",\"reason\":\"Structure Checkout flow from the transcribed sketch\",\"ops\":[{\"type\":\"add_node\",\"node\":{\"id\":\"epic-checkoutboard\",\"type\":\"epic\",\"label\":\"Checkout\",\"props\":{},\"region\":{\"marker\":1,\"box\":[35,45,175,955]},\"confidence\":0.88,\"origin\":\"gemma\",\"via\":\"sketch\"}},{\"type\":\"group\",\"group\":{\"id\":\"group-checkoutboard\",\"label\":\"Checkout\",\"members\":[]}}]},{\"id\":\"fixture-checkoutboard-structure-2\",\"base_version\":2,\"origin\":\"gemma\",\"via\":\"sketch\",\"reason\":\"Structure Checkout flow from the transcribed sketch\",\"ops\":[{\"type\":\"add_node\",\"node\":{\"id\":\"story-checkoutboard-1\",\"type\":\"story\",\"label\":\"Add an item to the cart\",\"props\":{\"story\":\"As a team member, I want to add an item to the cart\"},\"group\":\"group-checkoutboard\",\"region\":{\"marker\":2,\"box\":[205,125,610,455]},\"confidence\":0.83,\"origin\":\"gemma\",\"via\":\"sketch\"}},{\"type\":\"group\",\"group\":{\"id\":\"group-checkoutboard\",\"label\":\"Checkout\",\"members\":[\"story-checkoutboard-1\"]}},{\"type\":\"add_assumption\",\"assumption\":{\"id\":\"assumption-checkoutboard-story-title\",\"text\":\"The two notes are grouped under “Checkout”.\",\"status\":\"open\",\"patchId\":\"fixture-checkoutboard-structure-2\"}}]},{\"id\":\"fixture-checkoutboard-structure-3\",\"base_version\":3,\"origin\":\"gemma\",\"via\":\"sketch\",\"reason\":\"Structure Checkout flow from the transcribed sketch\",\"ops\":[{\"type\":\"add_node\",\"node\":{\"id\":\"story-checkoutboard-2\",\"type\":\"story\",\"label\":\"Complete the purchase\",\"props\":{\"story\":\"As a team member, I want to complete the purchase\",\"persona\":\"A team member\",\"acceptance\":[{\"given\":\"I am signed in\",\"when\":\"I complete the purchase\",\"then\":\"I see the expected result\"}]},\"group\":\"group-checkoutboard\",\"region\":{\"marker\":3,\"box\":[205,545,610,876]},\"confidence\":0.8,\"origin\":\"gemma\",\"via\":\"sketch\"}},{\"type\":\"group\",\"group\":{\"id\":\"group-checkoutboard\",\"label\":\"Checkout\",\"members\":[\"story-checkoutboard-1\",\"story-checkoutboard-2\"]}},{\"type\":\"add_edge\",\"edge\":{\"id\":\"edge-checkoutboard-1\",\"from\":{\"node\":\"story-checkoutboard-1\"},\"to\":{\"node\":\"story-checkoutboard-2\"},\"relation\":\"depends_on\",\"label\":\"after\",\"region\":{\"box\":[375,455,445,545]},\"confidence\":0.7,\"origin\":\"gemma\",\"via\":\"sketch\"}}]}],\"assumptions\":[{\"id\":\"assumption-checkoutboard-story-title\",\"text\":\"The two notes are grouped under “Checkout”.\",\"status\":\"open\",\"patchId\":\"fixture-checkoutboard-structure-2\"}],\"questions\":[]}"
+        }
+      ],
+      "metadata": {
+        "fixture": "checkout-board",
+        "pass": "B",
+        "promptVersion": "phase2-structure-v2"
+      }
+    },
+    {
+      "inputHash": "22d49e1a3610c5b7a18fd00eaebc0a931dbf7746522a03ad8e60fb2f0d27574f",
+      "chunks": [
+        {
+          "text": "{\"domain\":\"userstory\",\"confidence\":0.96,\"alternatives\":[]}"
+        }
+      ],
+      "metadata": {
+        "fixture": "notifications-board",
+        "pass": "0",
+        "promptVersion": "phase2-classify-v1"
+      }
+    },
+    {
+      "inputHash": "4d20395602b25a31aac59954b81f1ae7184e60125a54b8540bdc7af74c40bdbb",
+      "chunks": [
+        {
+          "text": "{\"tags\":[{\"tagId\":1,\"kind\":\"header\",\"text\":\"Notifications\",\"shape\":\"rectangle\",\"box\":[35,45,175,955],\"confidence\":0.9},{\"tagId\":2,\"kind\":\"note\",\"text\":\"Receive a reminder\",\"shape\":\"sticky_note\",\"box\":[205,125,610,455],\"confidence\":0.84},{\"tagId\":3,\"kind\":\"note\",\"text\":\"Manage reminder settings\",\"shape\":\"sticky_note\",\"box\":[205,545,610,876],\"confidence\":0.82},{\"tagId\":4,\"kind\":\"arrow\",\"text\":\"then\",\"shape\":\"arrow\",\"box\":[375,455,445,545],\"confidence\":0.7}],\"arrows\":[{\"tagId\":4,\"tailTag\":2,\"headTag\":3}]}"
+        }
+      ],
+      "metadata": {
+        "fixture": "notifications-board",
+        "pass": "A",
+        "promptVersion": "phase2-transcribe-v1"
+      }
+    },
+    {
+      "inputHash": "64a078b1c8144d96354ab428f8cbe6d34b9926edd96404e134ae7f0a37c85a42",
+      "chunks": [
+        {
+          "text": "{\"patches\":[{\"id\":\"fixture-notificationsboard-structure-1\",\"base_version\":1,\"origin\":\"gemma\",\"via\":\"sketch\",\"reason\":\"Structure Notification preferences from the transcribed sketch\",\"ops\":[{\"type\":\"add_node\",\"node\":{\"id\":\"epic-notificationsboard\",\"type\":\"epic\",\"label\":\"Notifications\",\"props\":{},\"region\":{\"marker\":1,\"box\":[35,45,175,955]},\"confidence\":0.88,\"origin\":\"gemma\",\"via\":\"sketch\"}},{\"type\":\"group\",\"group\":{\"id\":\"group-notificationsboard\",\"label\":\"Notifications\",\"members\":[]}}]},{\"id\":\"fixture-notificationsboard-structure-2\",\"base_version\":2,\"origin\":\"gemma\",\"via\":\"sketch\",\"reason\":\"Structure Notification preferences from the transcribed sketch\",\"ops\":[{\"type\":\"add_node\",\"node\":{\"id\":\"story-notificationsboard-1\",\"type\":\"story\",\"label\":\"Receive a reminder\",\"props\":{\"story\":\"As a team member, I want to receive a reminder\"},\"group\":\"group-notificationsboard\",\"region\":{\"marker\":2,\"box\":[205,125,610,455]},\"confidence\":0.83,\"origin\":\"gemma\",\"via\":\"sketch\"}},{\"type\":\"group\",\"group\":{\"id\":\"group-notificationsboard\",\"label\":\"Notifications\",\"members\":[\"story-notificationsboard-1\"]}},{\"type\":\"add_assumption\",\"assumption\":{\"id\":\"assumption-notificationsboard-story-title\",\"text\":\"The two notes are grouped under “Notifications”.\",\"status\":\"open\",\"patchId\":\"fixture-notificationsboard-structure-2\"}}]},{\"id\":\"fixture-notificationsboard-structure-3\",\"base_version\":3,\"origin\":\"gemma\",\"via\":\"sketch\",\"reason\":\"Structure Notification preferences from the transcribed sketch\",\"ops\":[{\"type\":\"add_node\",\"node\":{\"id\":\"story-notificationsboard-2\",\"type\":\"story\",\"label\":\"Manage reminder settings\",\"props\":{\"story\":\"As a team member, I want to manage reminder settings\",\"persona\":\"A team member\",\"acceptance\":[{\"given\":\"I am signed in\",\"when\":\"I manage reminder settings\",\"then\":\"I see the expected result\"}]},\"group\":\"group-notificationsboard\",\"region\":{\"marker\":3,\"box\":[205,545,610,876]},\"confidence\":0.8,\"origin\":\"gemma\",\"via\":\"sketch\"}},{\"type\":\"group\",\"group\":{\"id\":\"group-notificationsboard\",\"label\":\"Notifications\",\"members\":[\"story-notificationsboard-1\",\"story-notificationsboard-2\"]}},{\"type\":\"add_edge\",\"edge\":{\"id\":\"edge-notificationsboard-1\",\"from\":{\"node\":\"story-notificationsboard-1\"},\"to\":{\"node\":\"story-notificationsboard-2\"},\"relation\":\"depends_on\",\"label\":\"then\",\"region\":{\"box\":[375,455,445,545]},\"confidence\":0.7,\"origin\":\"gemma\",\"via\":\"sketch\"}}]}],\"assumptions\":[{\"id\":\"assumption-notificationsboard-story-title\",\"text\":\"The two notes are grouped under “Notifications”.\",\"status\":\"open\",\"patchId\":\"fixture-notificationsboard-structure-2\"}],\"questions\":[]}"
+        }
+      ],
+      "metadata": {
+        "fixture": "notifications-board",
+        "pass": "B",
+        "promptVersion": "phase2-structure-v2"
+      }
+    },
+    {
+      "inputHash": "152f64816d15d9084f4abc3a41f668dc939b41cfe35e3224bac9c3d80dd118b7",
+      "chunks": [
+        {
+          "text": "{\"domain\":\"userstory\",\"confidence\":0.96,\"alternatives\":[]}"
+        }
+      ],
+      "metadata": {
+        "fixture": "analytics-board",
+        "pass": "0",
+        "promptVersion": "phase2-classify-v1"
+      }
+    },
+    {
+      "inputHash": "b85433b2a6c4564b4edc666331782b6ce2ff8106abcffee85834f47e2d892c52",
+      "chunks": [
+        {
+          "text": "{\"tags\":[{\"tagId\":1,\"kind\":\"header\",\"text\":\"Analytics\",\"shape\":\"rectangle\",\"box\":[35,45,175,955],\"confidence\":0.9},{\"tagId\":2,\"kind\":\"note\",\"text\":\"Open the dashboard\",\"shape\":\"sticky_note\",\"box\":[205,125,610,455],\"confidence\":0.84},{\"tagId\":3,\"kind\":\"note\",\"text\":\"Download a chart\",\"shape\":\"sticky_note\",\"box\":[205,545,610,876],\"confidence\":0.82},{\"tagId\":4,\"kind\":\"arrow\",\"text\":\"then\",\"shape\":\"arrow\",\"box\":[375,455,445,545],\"confidence\":0.7}],\"arrows\":[{\"tagId\":4,\"tailTag\":2,\"headTag\":3}]}"
+        }
+      ],
+      "metadata": {
+        "fixture": "analytics-board",
+        "pass": "A",
+        "promptVersion": "phase2-transcribe-v1"
+      }
+    },
+    {
+      "inputHash": "80a2b52441cd0c89a50f808a0d36dfbf4bf97b4c9fb7c564adfd856408c39aa1",
+      "chunks": [
+        {
+          "text": "{\"patches\":[{\"id\":\"fixture-analyticsboard-structure-1\",\"base_version\":1,\"origin\":\"gemma\",\"via\":\"sketch\",\"reason\":\"Structure Analytics report from the transcribed sketch\",\"ops\":[{\"type\":\"add_node\",\"node\":{\"id\":\"epic-analyticsboard\",\"type\":\"epic\",\"label\":\"Analytics\",\"props\":{},\"region\":{\"marker\":1,\"box\":[35,45,175,955]},\"confidence\":0.88,\"origin\":\"gemma\",\"via\":\"sketch\"}},{\"type\":\"group\",\"group\":{\"id\":\"group-analyticsboard\",\"label\":\"Analytics\",\"members\":[]}}]},{\"id\":\"fixture-analyticsboard-structure-2\",\"base_version\":2,\"origin\":\"gemma\",\"via\":\"sketch\",\"reason\":\"Structure Analytics report from the transcribed sketch\",\"ops\":[{\"type\":\"add_node\",\"node\":{\"id\":\"story-analyticsboard-1\",\"type\":\"story\",\"label\":\"Open the dashboard\",\"props\":{\"story\":\"As a team member, I want to open the dashboard\"},\"group\":\"group-analyticsboard\",\"region\":{\"marker\":2,\"box\":[205,125,610,455]},\"confidence\":0.83,\"origin\":\"gemma\",\"via\":\"sketch\"}},{\"type\":\"group\",\"group\":{\"id\":\"group-analyticsboard\",\"label\":\"Analytics\",\"members\":[\"story-analyticsboard-1\"]}},{\"type\":\"add_assumption\",\"assumption\":{\"id\":\"assumption-analyticsboard-story-title\",\"text\":\"The two notes are grouped under “Analytics”.\",\"status\":\"open\",\"patchId\":\"fixture-analyticsboard-structure-2\"}}]},{\"id\":\"fixture-analyticsboard-structure-3\",\"base_version\":3,\"origin\":\"gemma\",\"via\":\"sketch\",\"reason\":\"Structure Analytics report from the transcribed sketch\",\"ops\":[{\"type\":\"add_node\",\"node\":{\"id\":\"story-analyticsboard-2\",\"type\":\"story\",\"label\":\"Download a chart\",\"props\":{\"story\":\"As a team member, I want to download a chart\",\"persona\":\"A team member\",\"acceptance\":[{\"given\":\"I am signed in\",\"when\":\"I download a chart\",\"then\":\"I see the expected result\"}]},\"group\":\"group-analyticsboard\",\"region\":{\"marker\":3,\"box\":[205,545,610,876]},\"confidence\":0.8,\"origin\":\"gemma\",\"via\":\"sketch\"}},{\"type\":\"group\",\"group\":{\"id\":\"group-analyticsboard\",\"label\":\"Analytics\",\"members\":[\"story-analyticsboard-1\",\"story-analyticsboard-2\"]}},{\"type\":\"add_edge\",\"edge\":{\"id\":\"edge-analyticsboard-1\",\"from\":{\"node\":\"story-analyticsboard-1\"},\"to\":{\"node\":\"story-analyticsboard-2\"},\"relation\":\"depends_on\",\"label\":\"then\",\"region\":{\"box\":[375,455,445,545]},\"confidence\":0.7,\"origin\":\"gemma\",\"via\":\"sketch\"}}]}],\"assumptions\":[{\"id\":\"assumption-analyticsboard-story-title\",\"text\":\"The two notes are grouped under “Analytics”.\",\"status\":\"open\",\"patchId\":\"fixture-analyticsboard-structure-2\"}],\"questions\":[]}"
+        }
+      ],
+      "metadata": {
+        "fixture": "analytics-board",
+        "pass": "B",
+        "promptVersion": "phase2-structure-v2"
+      }
+    },
+    {
+      "inputHash": "896bda4f19c5668a11e8ef5205c6221fc3e7bd7fee83e99900ac7ce66f988f87",
+      "chunks": [
+        {
+          "text": "{\"domain\":\"userstory\",\"confidence\":0.96,\"alternatives\":[]}"
+        }
+      ],
+      "metadata": {
+        "fixture": "team-board",
+        "pass": "0",
+        "promptVersion": "phase2-classify-v1"
+      }
+    },
+    {
+      "inputHash": "22a40c6763b51b8529415c2ec822deac2860ab697b3a0854cafbe0b42d7885fb",
+      "chunks": [
+        {
+          "text": "{\"tags\":[{\"tagId\":1,\"kind\":\"header\",\"text\":\"Team access\",\"shape\":\"rectangle\",\"box\":[35,45,175,955],\"confidence\":0.9},{\"tagId\":2,\"kind\":\"note\",\"text\":\"Invite a teammate\",\"shape\":\"sticky_note\",\"box\":[205,125,610,455],\"confidence\":0.84},{\"tagId\":3,\"kind\":\"note\",\"text\":\"Assign a role\",\"shape\":\"sticky_note\",\"box\":[205,545,610,876],\"confidence\":0.82},{\"tagId\":4,\"kind\":\"arrow\",\"text\":\"then\",\"shape\":\"arrow\",\"box\":[375,455,445,545],\"confidence\":0.7}],\"arrows\":[{\"tagId\":4,\"tailTag\":2,\"headTag\":3}]}"
+        }
+      ],
+      "metadata": {
+        "fixture": "team-board",
+        "pass": "A",
+        "promptVersion": "phase2-transcribe-v1"
+      }
+    },
+    {
+      "inputHash": "c1c0220fe15819bd224135a4fc955cb93c932b2b730703e5e92249e0f355c84b",
+      "chunks": [
+        {
+          "text": "{\"patches\":[{\"id\":\"fixture-teamboard-structure-1\",\"base_version\":1,\"origin\":\"gemma\",\"via\":\"sketch\",\"reason\":\"Structure Team access from the transcribed sketch\",\"ops\":[{\"type\":\"add_node\",\"node\":{\"id\":\"epic-teamboard\",\"type\":\"epic\",\"label\":\"Team access\",\"props\":{},\"region\":{\"marker\":1,\"box\":[35,45,175,955]},\"confidence\":0.88,\"origin\":\"gemma\",\"via\":\"sketch\"}},{\"type\":\"group\",\"group\":{\"id\":\"group-teamboard\",\"label\":\"Team access\",\"members\":[]}}]},{\"id\":\"fixture-teamboard-structure-2\",\"base_version\":2,\"origin\":\"gemma\",\"via\":\"sketch\",\"reason\":\"Structure Team access from the transcribed sketch\",\"ops\":[{\"type\":\"add_node\",\"node\":{\"id\":\"story-teamboard-1\",\"type\":\"story\",\"label\":\"Invite a teammate\",\"props\":{\"story\":\"As a team member, I want to invite a teammate\"},\"group\":\"group-teamboard\",\"region\":{\"marker\":2,\"box\":[205,125,610,455]},\"confidence\":0.83,\"origin\":\"gemma\",\"via\":\"sketch\"}},{\"type\":\"group\",\"group\":{\"id\":\"group-teamboard\",\"label\":\"Team access\",\"members\":[\"story-teamboard-1\"]}},{\"type\":\"add_assumption\",\"assumption\":{\"id\":\"assumption-teamboard-story-title\",\"text\":\"The two notes are grouped under “Team access”.\",\"status\":\"open\",\"patchId\":\"fixture-teamboard-structure-2\"}}]},{\"id\":\"fixture-teamboard-structure-3\",\"base_version\":3,\"origin\":\"gemma\",\"via\":\"sketch\",\"reason\":\"Structure Team access from the transcribed sketch\",\"ops\":[{\"type\":\"add_node\",\"node\":{\"id\":\"story-teamboard-2\",\"type\":\"story\",\"label\":\"Assign a role\",\"props\":{\"story\":\"As a team member, I want to assign a role\",\"persona\":\"A team member\",\"acceptance\":[{\"given\":\"I am signed in\",\"when\":\"I assign a role\",\"then\":\"I see the expected result\"}]},\"group\":\"group-teamboard\",\"region\":{\"marker\":3,\"box\":[205,545,610,876]},\"confidence\":0.8,\"origin\":\"gemma\",\"via\":\"sketch\"}},{\"type\":\"group\",\"group\":{\"id\":\"group-teamboard\",\"label\":\"Team access\",\"members\":[\"story-teamboard-1\",\"story-teamboard-2\"]}},{\"type\":\"add_edge\",\"edge\":{\"id\":\"edge-teamboard-1\",\"from\":{\"node\":\"story-teamboard-1\"},\"to\":{\"node\":\"story-teamboard-2\"},\"relation\":\"depends_on\",\"label\":\"then\",\"region\":{\"box\":[375,455,445,545]},\"confidence\":0.7,\"origin\":\"gemma\",\"via\":\"sketch\"}}]}],\"assumptions\":[{\"id\":\"assumption-teamboard-story-title\",\"text\":\"The two notes are grouped under “Team access”.\",\"status\":\"open\",\"patchId\":\"fixture-teamboard-structure-2\"}],\"questions\":[]}"
+        }
+      ],
+      "metadata": {
+        "fixture": "team-board",
+        "pass": "B",
+        "promptVersion": "phase2-structure-v2"
+      }
+    },
+    {
+      "inputHash": "d561322462e06e18532db92c04aa13988edb012a38fecc9135744eb2464b13a6",
+      "chunks": [
+        {
+          "text": "{\"domain\":\"userstory\",\"confidence\":0.96,\"alternatives\":[]}"
+        }
+      ],
+      "metadata": {
+        "fixture": "search-board",
+        "pass": "0",
+        "promptVersion": "phase2-classify-v1"
+      }
+    },
+    {
+      "inputHash": "19dcc9ccb18669d71f1fa9f84cd25675bfe687fa752bc7fea0eaad1cf3bef023",
+      "chunks": [
+        {
+          "text": "{\"tags\":[{\"tagId\":1,\"kind\":\"header\",\"text\":\"Saved search\",\"shape\":\"rectangle\",\"box\":[35,45,175,955],\"confidence\":0.9},{\"tagId\":2,\"kind\":\"note\",\"text\":\"Find a report\",\"shape\":\"sticky_note\",\"box\":[205,125,610,455],\"confidence\":0.84},{\"tagId\":3,\"kind\":\"note\",\"text\":\"Save the filter\",\"shape\":\"sticky_note\",\"box\":[205,545,610,876],\"confidence\":0.82},{\"tagId\":4,\"kind\":\"arrow\",\"text\":\"then\",\"shape\":\"arrow\",\"box\":[375,455,445,545],\"confidence\":0.7}],\"arrows\":[{\"tagId\":4,\"tailTag\":2,\"headTag\":3}]}"
+        }
+      ],
+      "metadata": {
+        "fixture": "search-board",
+        "pass": "A",
+        "promptVersion": "phase2-transcribe-v1"
+      }
+    },
+    {
+      "inputHash": "d918443403a147d72b500b4b255256e0733b430736fd7787b39087835453b6c9",
+      "chunks": [
+        {
+          "text": "{\"patches\":[{\"id\":\"fixture-searchboard-structure-1\",\"base_version\":1,\"origin\":\"gemma\",\"via\":\"sketch\",\"reason\":\"Structure Saved search from the transcribed sketch\",\"ops\":[{\"type\":\"add_node\",\"node\":{\"id\":\"epic-searchboard\",\"type\":\"epic\",\"label\":\"Saved search\",\"props\":{},\"region\":{\"marker\":1,\"box\":[35,45,175,955]},\"confidence\":0.88,\"origin\":\"gemma\",\"via\":\"sketch\"}},{\"type\":\"group\",\"group\":{\"id\":\"group-searchboard\",\"label\":\"Saved search\",\"members\":[]}}]},{\"id\":\"fixture-searchboard-structure-2\",\"base_version\":2,\"origin\":\"gemma\",\"via\":\"sketch\",\"reason\":\"Structure Saved search from the transcribed sketch\",\"ops\":[{\"type\":\"add_node\",\"node\":{\"id\":\"story-searchboard-1\",\"type\":\"story\",\"label\":\"Find a report\",\"props\":{\"story\":\"As a team member, I want to find a report\"},\"group\":\"group-searchboard\",\"region\":{\"marker\":2,\"box\":[205,125,610,455]},\"confidence\":0.83,\"origin\":\"gemma\",\"via\":\"sketch\"}},{\"type\":\"group\",\"group\":{\"id\":\"group-searchboard\",\"label\":\"Saved search\",\"members\":[\"story-searchboard-1\"]}},{\"type\":\"add_assumption\",\"assumption\":{\"id\":\"assumption-searchboard-story-title\",\"text\":\"The two notes are grouped under “Saved search”.\",\"status\":\"open\",\"patchId\":\"fixture-searchboard-structure-2\"}}]},{\"id\":\"fixture-searchboard-structure-3\",\"base_version\":3,\"origin\":\"gemma\",\"via\":\"sketch\",\"reason\":\"Structure Saved search from the transcribed sketch\",\"ops\":[{\"type\":\"add_node\",\"node\":{\"id\":\"story-searchboard-2\",\"type\":\"story\",\"label\":\"Save the filter\",\"props\":{\"story\":\"As a team member, I want to save the filter\",\"persona\":\"A team member\",\"acceptance\":[{\"given\":\"I am signed in\",\"when\":\"I save the filter\",\"then\":\"I see the expected result\"}]},\"group\":\"group-searchboard\",\"region\":{\"marker\":3,\"box\":[205,545,610,876]},\"confidence\":0.8,\"origin\":\"gemma\",\"via\":\"sketch\"}},{\"type\":\"group\",\"group\":{\"id\":\"group-searchboard\",\"label\":\"Saved search\",\"members\":[\"story-searchboard-1\",\"story-searchboard-2\"]}},{\"type\":\"add_edge\",\"edge\":{\"id\":\"edge-searchboard-1\",\"from\":{\"node\":\"story-searchboard-1\"},\"to\":{\"node\":\"story-searchboard-2\"},\"relation\":\"depends_on\",\"label\":\"then\",\"region\":{\"box\":[375,455,445,545]},\"confidence\":0.7,\"origin\":\"gemma\",\"via\":\"sketch\"}}]}],\"assumptions\":[{\"id\":\"assumption-searchboard-story-title\",\"text\":\"The two notes are grouped under “Saved search”.\",\"status\":\"open\",\"patchId\":\"fixture-searchboard-structure-2\"}],\"questions\":[]}"
+        }
+      ],
+      "metadata": {
+        "fixture": "search-board",
+        "pass": "B",
+        "promptVersion": "phase2-structure-v2"
+      }
+    },
+    {
+      "inputHash": "33c4e824f2a233c70f0a0836590d46e7b8bc001724dbd283bcc114aaa90726b5",
+      "chunks": [
+        {
+          "text": "{\"domain\":\"userstory\",\"confidence\":0.96,\"alternatives\":[]}"
+        }
+      ],
+      "metadata": {
+        "fixture": "workspace-board",
+        "pass": "0",
+        "promptVersion": "phase2-classify-v1"
+      }
+    },
+    {
+      "inputHash": "604301ad31113e57b43f277de4ee68d79873a71e8491b4c84bbbd98b68c98cc2",
+      "chunks": [
+        {
+          "text": "{\"tags\":[{\"tagId\":1,\"kind\":\"header\",\"text\":\"Shared workspace\",\"shape\":\"rectangle\",\"box\":[35,45,175,955],\"confidence\":0.9},{\"tagId\":2,\"kind\":\"note\",\"text\":\"Create a workspace\",\"shape\":\"sticky_note\",\"box\":[205,125,610,455],\"confidence\":0.84},{\"tagId\":3,\"kind\":\"note\",\"text\":\"Share it with the team\",\"shape\":\"sticky_note\",\"box\":[205,545,610,876],\"confidence\":0.82},{\"tagId\":4,\"kind\":\"arrow\",\"text\":\"then\",\"shape\":\"arrow\",\"box\":[375,455,445,545],\"confidence\":0.7}],\"arrows\":[{\"tagId\":4,\"tailTag\":2,\"headTag\":3}]}"
+        }
+      ],
+      "metadata": {
+        "fixture": "workspace-board",
+        "pass": "A",
+        "promptVersion": "phase2-transcribe-v1"
+      }
+    },
+    {
+      "inputHash": "4ff043e6b9633c3983b37a15b13efa97b3fe8d64b075c8f0c2d856ce5472d8bb",
+      "chunks": [
+        {
+          "text": "{\"patches\":[{\"id\":\"fixture-workspaceboard-structure-1\",\"base_version\":1,\"origin\":\"gemma\",\"via\":\"sketch\",\"reason\":\"Structure Shared workspace from the transcribed sketch\",\"ops\":[{\"type\":\"add_node\",\"node\":{\"id\":\"epic-workspaceboard\",\"type\":\"epic\",\"label\":\"Shared workspace\",\"props\":{},\"region\":{\"marker\":1,\"box\":[35,45,175,955]},\"confidence\":0.88,\"origin\":\"gemma\",\"via\":\"sketch\"}},{\"type\":\"group\",\"group\":{\"id\":\"group-workspaceboard\",\"label\":\"Shared workspace\",\"members\":[]}}]},{\"id\":\"fixture-workspaceboard-structure-2\",\"base_version\":2,\"origin\":\"gemma\",\"via\":\"sketch\",\"reason\":\"Structure Shared workspace from the transcribed sketch\",\"ops\":[{\"type\":\"add_node\",\"node\":{\"id\":\"story-workspaceboard-1\",\"type\":\"story\",\"label\":\"Create a workspace\",\"props\":{\"story\":\"As a team member, I want to create a workspace\"},\"group\":\"group-workspaceboard\",\"region\":{\"marker\":2,\"box\":[205,125,610,455]},\"confidence\":0.83,\"origin\":\"gemma\",\"via\":\"sketch\"}},{\"type\":\"group\",\"group\":{\"id\":\"group-workspaceboard\",\"label\":\"Shared workspace\",\"members\":[\"story-workspaceboard-1\"]}},{\"type\":\"add_assumption\",\"assumption\":{\"id\":\"assumption-workspaceboard-story-title\",\"text\":\"The two notes are grouped under “Shared workspace”.\",\"status\":\"open\",\"patchId\":\"fixture-workspaceboard-structure-2\"}}]},{\"id\":\"fixture-workspaceboard-structure-3\",\"base_version\":3,\"origin\":\"gemma\",\"via\":\"sketch\",\"reason\":\"Structure Shared workspace from the transcribed sketch\",\"ops\":[{\"type\":\"add_node\",\"node\":{\"id\":\"story-workspaceboard-2\",\"type\":\"story\",\"label\":\"Share it with the team\",\"props\":{\"story\":\"As a team member, I want to share it with the team\",\"persona\":\"A team member\",\"acceptance\":[{\"given\":\"I am signed in\",\"when\":\"I share it with the team\",\"then\":\"I see the expected result\"}]},\"group\":\"group-workspaceboard\",\"region\":{\"marker\":3,\"box\":[205,545,610,876]},\"confidence\":0.8,\"origin\":\"gemma\",\"via\":\"sketch\"}},{\"type\":\"group\",\"group\":{\"id\":\"group-workspaceboard\",\"label\":\"Shared workspace\",\"members\":[\"story-workspaceboard-1\",\"story-workspaceboard-2\"]}},{\"type\":\"add_edge\",\"edge\":{\"id\":\"edge-workspaceboard-1\",\"from\":{\"node\":\"story-workspaceboard-1\"},\"to\":{\"node\":\"story-workspaceboard-2\"},\"relation\":\"depends_on\",\"label\":\"then\",\"region\":{\"box\":[375,455,445,545]},\"confidence\":0.7,\"origin\":\"gemma\",\"via\":\"sketch\"}}]}],\"assumptions\":[{\"id\":\"assumption-workspaceboard-story-title\",\"text\":\"The two notes are grouped under “Shared workspace”.\",\"status\":\"open\",\"patchId\":\"fixture-workspaceboard-structure-2\"}],\"questions\":[]}"
+        }
+      ],
+      "metadata": {
+        "fixture": "workspace-board",
+        "pass": "B",
+        "promptVersion": "phase2-structure-v2"
+      }
+    }
+  ]
+}
