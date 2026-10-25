@@ -14,7 +14,7 @@
     "types": ["node", "vitest/globals"],
     "outDir": "dist"
   },
-  "include": ["packages/**/*.ts", "apps/**/*.ts", "apps/**/*.tsx", "scripts/**/*.ts", "eval/**/*.ts", "vitest.config.ts", "playwright.config.ts"],
+  "include": ["api/**/*.ts", "packages/**/*.ts", "apps/**/*.ts", "apps/**/*.tsx", "scripts/**/*.ts", "eval/**/*.ts", "vitest.config.ts", "playwright.config.ts"],
   "exclude": ["node_modules", "dist"]
 }
 

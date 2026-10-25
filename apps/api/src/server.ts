@@ -22,7 +22,7 @@ export function buildServer(env: NodeJS.ProcessEnv = process.env) {
   const app = Fastify({ logger: true, bodyLimit: 25 * 1024 * 1024 });
   const localOrigins = new Set(["http://127.0.0.1:4173", "http://127.0.0.1:4178", "http://127.0.0.1:4179", "http://localhost:4173", "http://localhost:4178", "http://localhost:4179", "http://127.0.0.1:5173", "http://localhost:5173"]);
   void app.register(cors, {
-    origin: (origin, callback) => callback(null, !origin || localOrigins.has(origin)),
+    origin: (origin, callback) => callback(null, !origin || localOrigins.has(origin) || origin.endsWith(".vercel.app") || Boolean(process.env.VERCEL)),
     credentials: false,
   });
 
@@ -30,6 +30,12 @@ export function buildServer(env: NodeJS.ProcessEnv = process.env) {
   app.get("/api/settings", async () => ({ ...actionSettings(env), jira: jiraSettings(env) }));
   app.get("/api/model/status", async () => getGeminiConnectionSettings(env));
   app.post("/api/model/credential", async (request, reply) => {
+    if (process.env.VERCEL) {
+      return reply.code(400).send({
+        ok: false,
+        message: "On Vercel, please set GEMINI_API_KEY in your Project Settings > Environment Variables in the Vercel dashboard.",
+      });
+    }
     const address = request.raw.socket.remoteAddress?.replace(/^::ffff:/, "");
     if (address && address !== "127.0.0.1" && address !== "::1") return reply.code(403).send({ ok: false, message: "Credentials can only be saved from this computer." });
     const parsed = z.object({ apiKey: z.string().trim().min(20).max(500) }).strict().safeParse(request.body);
@@ -172,8 +178,15 @@ export function buildServer(env: NodeJS.ProcessEnv = process.env) {
   return app;
 }
 
+const isDirectRun = Boolean(
+  process.argv[1] &&
+  (fileURLToPath(import.meta.url) === resolve(process.argv[1]) ||
+   process.argv[1].endsWith("apps/api/src/server.ts") ||
+   process.argv[1].endsWith("apps/api/src/server.js"))
+);
+
 const port = Number(process.env.API_PORT ?? 4173);
-if (process.env.NODE_ENV !== "test") {
+if (process.env.NODE_ENV !== "test" && !process.env.VERCEL && isDirectRun) {
   const app = buildServer();
   await app.listen({ host: "127.0.0.1", port });
 }
